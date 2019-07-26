@@ -41,7 +41,6 @@ public class Test {
             ints.add(r);
         } else{
             r =  ( ysfdg ( sum-1, value,n-1 ,ints) + value ) %sum;
-//            System.out.println(r);
             ints.add(r);
         }
         return r;
