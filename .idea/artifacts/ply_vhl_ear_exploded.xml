@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="ply_vhl:ear exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ply_vhl_ear_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ply_vhl/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>
