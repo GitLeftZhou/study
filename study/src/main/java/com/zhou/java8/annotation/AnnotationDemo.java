@@ -1,11 +1,7 @@
 package com.zhou.java8.annotation;
 
-//import com.sun.istack.internal.NotNull;
 import org.junit.Test;
-
 import javax.annotation.Nonnull;
-//import javax.validation.constraints.NotNull;
-//import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
 /**

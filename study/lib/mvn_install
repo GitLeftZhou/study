@@ -1,0 +1,1 @@
+mvn install:install-file -Dfile=D:\WORK\IdeaProjects\study\study\lib\chardet-1.0.jar -DgroupId=com.local.jar -DartifactId=chardet -Dversion=1.0 -Dpackaging=jar
