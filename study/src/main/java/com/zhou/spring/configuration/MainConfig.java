@@ -38,9 +38,16 @@ import org.springframework.context.annotation.*;
 })
 public class MainConfig {
 
-    // bean id 使用两种方式 注解传入，方法名
-    // 默认单实例
-    @Bean("person")
+    /**
+     * bean id 使用两种方式 注解传入，方法名 默认单实例
+     * Bean(value = "person",initMethod = "",destroyMethod = "") 声明初始化方法和销毁方法
+     *      适用于他人创建的bean,在注册时声明
+     * @see com.zhou.spring.services.PersonService 实现初始化和销毁的另外两种方式
+     *      适用于自己创建的bean，在创建时就指定初始化和销毁，防止使用时遗漏
+     *
+     * @return
+     */
+    @Bean(value = "person",initMethod = "",destroyMethod = "")
     public Person person(){
         return new Person("zhangsan","18");
     }
