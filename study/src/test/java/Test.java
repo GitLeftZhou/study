@@ -10,6 +10,7 @@ public class Test {
     @org.junit.Test
     public void test01(){
         DateFormat df = DateFormat.getDateInstance(2, Locale.getDefault());
+        System.out.println(df.format(new Date()));
         String str = "2018-11-27";
         try {
             System.out.println(df.parse(str));

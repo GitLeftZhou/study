@@ -15,6 +15,7 @@ import java.util.Map;
  *
  * 类中声明了profile,以类声明为准
  * 没有声明profile的组件，任何情况下都可以生效
+ *      (在类上声明了profile,方法没有声明,方法不能生效)
  *
  * 激活profile环境参数的方式
  *      1.在java虚拟机的运行时命令中加入-Dspring.profiles.active=profile_name

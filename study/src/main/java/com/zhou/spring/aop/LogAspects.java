@@ -36,7 +36,7 @@ public class LogAspects {
 
     //本类中可以直接使用方法名
     @Before("pointCut()")
-    public void logStart(JoinPoint joinPoint){
+    public void logStart(JoinPoint joinPoint) throws Exception {
 
         //参数为自定义类型时，需实现toString()，打印内部属性值
         Object[] args = joinPoint.getArgs();
@@ -44,6 +44,9 @@ public class LogAspects {
         final String name = signature.getDeclaringTypeName() + "." + signature.getName();
         System.out.println("LogAspects.logStart"+"--->["
                 + name +"]开始运行,参数列表是:{"+ Arrays.asList(args)+"}");
+//        if ((int)args[1] == 0){
+//            throw new Exception("被除数不能为0");
+//        }
     }
 
     /**
